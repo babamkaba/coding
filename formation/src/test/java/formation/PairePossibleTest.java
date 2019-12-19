@@ -1,15 +1,17 @@
 package formation;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 import formation.exception.PaireException;
 import formation.service.PairePossible;
-import junit.framework.TestCase;
 
-public class PairePossibleTest extends TestCase {
-	
-	public static final String MOINS_CARACTERS = "Le nombre de paires ne peut être constitué qu'avec deux caractères au moins";
-	public static final String PLUS_CARACTERS = "Le nombre de caracteres possibles est 27";
+@RunWith(JUnit4.class)
+public class PairePossibleTest {
+
 	
 	@Test
 	public void testPairePossiblePositif(){
